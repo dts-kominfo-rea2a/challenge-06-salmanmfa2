@@ -22,7 +22,7 @@ let modifyFile3 = (val) => {
 const bacaData = (fnCallBack)=>{
   const arrResult = [];
   fs.readFile(
-   "./data1.json",
+   file1,
     {encoding : "utf-8"},
    (err,data1)=>{
     if(err){
@@ -35,7 +35,7 @@ const bacaData = (fnCallBack)=>{
   }
 )
 fs.readFile(
-  "./data2.json",
+  file2,
    {encoding : "utf-8"},
   (err,data2)=>{
    if(err){
@@ -48,7 +48,7 @@ fs.readFile(
  }
 )
 fs.readFile(
-  "./data3.json",
+  file3,
    {encoding : "utf-8"},
   (err,data3)=>{
    if(err){
